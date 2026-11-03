@@ -74,3 +74,15 @@ body:has(.home-main){
 .home-main .hero h1.album-title::before{display:none}
 .home-main .hero h1.album-title::after{content:"✧";top:34%;right:0;font-size:19px;color:#b4a4c5;filter:drop-shadow(0 0 5px #d8d2eb)}
 @media(max-width:360px){.home-main .hero h1.album-title em{font-size:clamp(49px,14.5vw,58px)}}
+
+/* Approved 03 + 08 + 09: liquid silver, pearl reflection and stardust */
+.home-main .liquid-title{position:relative;isolation:isolate;width:min(100%,360px);margin:0 auto 0;padding:3px 0 0;text-align:center}
+.home-main .liquid-title::before{content:"";position:absolute;inset:13% -8% 4%;z-index:-1;pointer-events:none;background:linear-gradient(105deg,transparent 8%,rgba(198,231,231,.37) 30%,rgba(226,205,240,.43) 60%,transparent 90%);filter:blur(19px);transform:rotate(-9deg)}
+.home-main .liquid-title h1.album-title{position:relative;z-index:2;margin:0 auto;padding:0;display:flex;flex-direction:column;align-items:center;gap:5px}
+.home-main .liquid-title h1.album-title::before,.home-main .liquid-title h1.album-title::after{display:none}
+.home-main .liquid-title h1.album-title span{font:400 clamp(19px,5vw,26px)/1.15 Georgia,"Times New Roman",serif;letter-spacing:.23em;color:#758c9d;text-shadow:none}
+.home-main .liquid-title h1.album-title em{font:italic 400 clamp(66px,17vw,90px)/1.04 "Bodoni MT",Didot,"Times New Roman",Georgia,serif;letter-spacing:-.045em;background:linear-gradient(180deg,#455e73 0%,#aabecb 18%,#f0f8fa 29%,#667f93 39%,#d6e3e8 48%,#60788f 57%,#425e72 78%,#6f7898 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:#536e81;filter:drop-shadow(0 3px 2px rgba(108,133,154,.22))}
+.home-main .liquid-reflection{position:relative;z-index:1;font:italic 400 clamp(66px,17vw,90px)/.75 "Bodoni MT",Didot,"Times New Roman",Georgia,serif;letter-spacing:-.045em;transform:scaleY(-.33);transform-origin:top;margin-top:-1px;margin-bottom:-29px;background:linear-gradient(180deg,rgba(112,141,161,.55),transparent 85%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;opacity:.38;filter:blur(1.6px);pointer-events:none}
+.home-main .liquid-star{position:absolute;z-index:3;pointer-events:none;color:#fff;text-shadow:0 0 5px #90b7c9,0 0 13px #b9a9d3}
+.home-main .star-one{top:24%;right:10%;font-size:22px}.home-main .star-two{top:61%;left:4%;font-size:15px}.home-main .star-three{bottom:4%;right:18%;font-size:11px}
+@media(max-width:380px){.home-main .liquid-title h1.album-title em,.home-main .liquid-reflection{font-size:clamp(57px,16vw,67px)}.home-main .liquid-reflection{margin-bottom:-23px}}
