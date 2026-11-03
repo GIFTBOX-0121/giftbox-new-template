@@ -96,3 +96,22 @@ body:has(.home-main){
 .home-main .liquid-title .star-one{top:30%;right:8%}
 .home-main .liquid-title .star-two{top:57%;left:5%}
 .home-main .liquid-title .star-three{bottom:12%;right:15%}
+
+/* More visible stardust surrounding the approved liquid chrome title */
+.home-main .liquid-title{overflow:visible}
+.home-main .liquid-title::after{content:"";position:absolute;pointer-events:none;z-index:1;inset:-25px -28px -10px;background:
+radial-gradient(circle at 9% 24%,#fff 0 1.5px,#a4c8d9 2px,transparent 5px),
+radial-gradient(circle at 20% 74%,#fff 0 1px,#d0b6e2 2px,transparent 4px),
+radial-gradient(circle at 86% 14%,#fff 0 1.5px,#c9b5e3 2.5px,transparent 5px),
+radial-gradient(circle at 94% 64%,#fff 0 1px,#9fcdd9 2px,transparent 5px),
+radial-gradient(circle at 74% 90%,#fff 0 1.5px,#d1b7dd 2.5px,transparent 5px),
+radial-gradient(circle at 36% 8%,#fff 0 1px,#a9d7d9 2px,transparent 4px),
+radial-gradient(circle at 6% 89%,#c4b5df 0 1.2px,transparent 3px),
+radial-gradient(circle at 99% 34%,#aacbd4 0 1.2px,transparent 3px);
+filter:drop-shadow(0 0 5px rgba(148,178,207,.85))}
+.home-main .liquid-title .liquid-star{z-index:4;color:#fff;text-shadow:0 0 2px #8babc3,0 0 7px #9abed1,0 0 15px #bda5da}
+.home-main .liquid-title .star-one{font-size:28px;top:25%;right:1%}
+.home-main .liquid-title .star-two{font-size:22px;top:64%;left:-3%}
+.home-main .liquid-title .star-three{font-size:18px;bottom:5%;right:11%}
+.home-main .liquid-title h1.album-title{z-index:3}
+@media(max-width:380px){.home-main .liquid-title::after{inset:-15px -10px -7px}.home-main .liquid-title .star-two{left:0}.home-main .liquid-title .star-one{right:1%}}
