@@ -66,3 +66,11 @@ body:has(.home-main){
 .home-main .nav a{background:linear-gradient(125deg,rgba(255,255,255,.87),rgba(249,251,253,.75));box-shadow:0 5px 19px rgba(112,149,168,.1),inset 0 1px 0 rgba(255,255,255,.95)}
 .home-main .topline{position:relative;z-index:1}
 @media(max-height:730px){.home-main::before{top:-85px}.home-main::after{bottom:-100px}}
+
+/* Refined album masthead — editorial typography, no upper ornament line */
+.home-main .hero h1.album-title{position:relative;gap:2px;padding:0 24px 12px;margin:0 auto 5px;overflow:visible}
+.home-main .hero h1.album-title span{font-family:Georgia,"Times New Roman",serif;font-size:clamp(18px,5.1vw,26px);font-variant:small-caps;letter-spacing:.23em;color:#687c8c;font-weight:400;text-shadow:0 1px 0 #fff}
+.home-main .hero h1.album-title em{font-family:"Bodoni MT","Didot","Times New Roman",Georgia,serif;font-style:italic;font-weight:400;font-size:clamp(58px,15vw,79px);line-height:1.04;letter-spacing:-.035em;background:linear-gradient(110deg,#435b70 4%,#8197a5 27%,#4c647b 49%,#867c9d 73%,#516f81 96%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:#536a7d;filter:drop-shadow(0 2px 1px rgba(255,255,255,.72))}
+.home-main .hero h1.album-title::before{display:none}
+.home-main .hero h1.album-title::after{content:"✧";top:34%;right:0;font-size:19px;color:#b4a4c5;filter:drop-shadow(0 0 5px #d8d2eb)}
+@media(max-width:360px){.home-main .hero h1.album-title em{font-size:clamp(49px,14.5vw,58px)}}
