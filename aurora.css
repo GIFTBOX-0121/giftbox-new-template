@@ -31,3 +31,38 @@ body:has(.home-main){
  text-shadow:none;filter:drop-shadow(0 1px 0 rgba(255,255,255,.55));
 }
 .home-main .nav a{background:rgba(255,255,255,.69);border-color:rgba(196,211,218,.84);box-shadow:0 5px 22px rgba(141,165,179,.07)}
+
+/* Aurora 2.0: visible pearl sheen and layered spectral ribbons in the whitespace */
+body:has(.home-main){
+ background:
+ radial-gradient(ellipse 70% 25% at 0% 3%,rgba(140,215,217,.43),transparent 95%),
+ radial-gradient(ellipse 65% 27% at 100% 7%,rgba(215,179,230,.42),transparent 95%),
+ radial-gradient(ellipse 76% 26% at 4% 96%,rgba(234,182,217,.40),transparent 95%),
+ radial-gradient(ellipse 72% 30% at 99% 98%,rgba(139,211,225,.45),transparent 95%),
+ linear-gradient(180deg,#f5fbfb 0%,#fff 30%,#fff 67%,#f9f7fc 100%);
+ background-attachment:fixed;
+}
+.home-main{position:relative;isolation:isolate;overflow:hidden}
+.home-main::before,.home-main::after{
+ content:"";position:absolute;pointer-events:none;z-index:-1;
+ left:-28%;width:156%;height:170px;border-radius:50%;
+ opacity:1;filter:blur(12px);
+ background:
+ linear-gradient(172deg,transparent 0% 19%,rgba(255,255,255,.88) 27%,rgba(177,224,225,.64) 34%,rgba(213,192,231,.64) 43%,rgba(252,229,239,.72) 50%,rgba(205,222,233,.65) 59%,rgba(255,255,255,.82) 66%,transparent 78%);
+ box-shadow:0 0 65px rgba(199,218,234,.26);
+}
+.home-main::before{top:-48px;transform:rotate(-12deg)}
+.home-main::after{bottom:-58px;transform:rotate(12deg) scaleX(-1)}
+.home-main .home-content{position:relative;z-index:1}
+.home-main .home-content::before,.home-main .home-content::after{
+ content:"";position:absolute;pointer-events:none;z-index:-1;
+ width:115%;left:-7.5%;height:88px;border-radius:50%;
+ background:linear-gradient(90deg,transparent,rgba(255,255,255,.7) 13%,rgba(179,219,225,.42) 30%,rgba(238,214,234,.44) 50%,rgba(191,216,229,.45) 72%,rgba(255,255,255,.65) 88%,transparent);
+ filter:blur(22px);
+}
+.home-main .home-content::before{top:-72px;transform:rotate(7deg)}
+.home-main .home-content::after{bottom:-68px;transform:rotate(-7deg)}
+.home-main .hero img{box-shadow:0 15px 36px rgba(110,136,154,.16),0 0 0 7px rgba(255,255,255,.55)}
+.home-main .nav a{background:linear-gradient(125deg,rgba(255,255,255,.87),rgba(249,251,253,.75));box-shadow:0 5px 19px rgba(112,149,168,.1),inset 0 1px 0 rgba(255,255,255,.95)}
+.home-main .topline{position:relative;z-index:1}
+@media(max-height:730px){.home-main::before{top:-85px}.home-main::after{bottom:-100px}}
