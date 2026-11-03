@@ -115,3 +115,21 @@ filter:drop-shadow(0 0 5px rgba(148,178,207,.85))}
 .home-main .liquid-title .star-three{font-size:18px;bottom:5%;right:11%}
 .home-main .liquid-title h1.album-title{z-index:3}
 @media(max-width:380px){.home-main .liquid-title::after{inset:-15px -10px -7px}.home-main .liquid-title .star-two{left:0}.home-main .liquid-title .star-one{right:1%}}
+
+/* Clearly visible pearlescent sparkle constellation — approved title unchanged */
+.home-main .liquid-title .stardust-field{position:absolute;inset:-28px -30px -18px;z-index:5;pointer-events:none;overflow:visible}
+.home-main .stardust-field i{position:absolute;display:block;width:14px;height:14px;opacity:.95;background:linear-gradient(135deg,#fefefe 0%,#fff 42%,#c8e4f0 55%,#e7d3f3 85%);clip-path:polygon(50% 0%,61% 38%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 38%);filter:drop-shadow(0 0 4px #829fb9);animation:auroraTwinkle 3.5s ease-in-out infinite alternate}
+.home-main .stardust-field i:nth-child(1){left:4%;top:13%;width:25px;height:25px}
+.home-main .stardust-field i:nth-child(2){right:3%;top:19%;width:33px;height:33px;animation-delay:-1.3s}
+.home-main .stardust-field i:nth-child(3){left:0;top:58%;width:20px;height:20px;animation-delay:-2s}
+.home-main .stardust-field i:nth-child(4){right:0;top:69%;width:24px;height:24px;animation-delay:-.5s}
+.home-main .stardust-field i:nth-child(5){left:19%;top:2%;width:12px;height:12px}
+.home-main .stardust-field i:nth-child(6){right:24%;top:6%;width:15px;height:15px;animation-delay:-2.2s}
+.home-main .stardust-field i:nth-child(7){left:12%;bottom:9%;width:12px;height:12px}
+.home-main .stardust-field i:nth-child(8){right:17%;bottom:4%;width:18px;height:18px;animation-delay:-1.1s}
+.home-main .stardust-field i:nth-child(9){left:33%;top:18%;width:8px;height:8px}
+.home-main .stardust-field i:nth-child(10){right:34%;top:23%;width:9px;height:9px;animation-delay:-.9s}
+.home-main .stardust-field i:nth-child(11){left:25%;bottom:22%;width:7px;height:7px}
+.home-main .stardust-field i:nth-child(12){right:29%;bottom:19%;width:8px;height:8px;animation-delay:-2.6s}
+@keyframes auroraTwinkle{0%{opacity:.55;transform:scale(.78)}100%{opacity:1;transform:scale(1.18)}}
+@media(prefers-reduced-motion:reduce){.home-main .stardust-field i{animation:none}}
