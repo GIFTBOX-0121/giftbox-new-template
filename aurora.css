@@ -86,3 +86,13 @@ body:has(.home-main){
 .home-main .liquid-star{position:absolute;z-index:3;pointer-events:none;color:#fff;text-shadow:0 0 5px #90b7c9,0 0 13px #b9a9d3}
 .home-main .star-one{top:24%;right:10%;font-size:22px}.home-main .star-two{top:61%;left:4%;font-size:15px}.home-main .star-three{bottom:4%;right:18%;font-size:11px}
 @media(max-width:380px){.home-main .liquid-title h1.album-title em,.home-main .liquid-reflection{font-size:clamp(57px,16vw,67px)}.home-main .liquid-reflection{margin-bottom:-23px}}
+
+/* Fix: reflection must not create a second readable heading or layout row */
+.home-main .liquid-title{padding-bottom:11px}
+.home-main .liquid-title h1.album-title{position:relative;isolation:isolate}
+.home-main .liquid-title h1.album-title em{position:relative;z-index:2}
+.home-main .liquid-title h1.album-title em::after{content:"Aurora";position:absolute;left:0;right:0;top:93%;font:inherit;letter-spacing:inherit;line-height:1;transform:scaleY(-.28);transform-origin:top;background:linear-gradient(180deg,rgba(120,153,174,.35),transparent 85%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;opacity:.35;filter:blur(2.4px);pointer-events:none}
+.home-main .liquid-title .liquid-star{line-height:1}
+.home-main .liquid-title .star-one{top:30%;right:8%}
+.home-main .liquid-title .star-two{top:57%;left:5%}
+.home-main .liquid-title .star-three{bottom:12%;right:15%}
