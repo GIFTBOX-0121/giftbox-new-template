@@ -133,3 +133,6 @@ filter:drop-shadow(0 0 5px rgba(148,178,207,.85))}
 .home-main .stardust-field i:nth-child(12){right:29%;bottom:19%;width:8px;height:8px;animation-delay:-2.6s}
 @keyframes auroraTwinkle{0%{opacity:.55;transform:scale(.78)}100%{opacity:1;transform:scale(1.18)}}
 @media(prefers-reduced-motion:reduce){.home-main .stardust-field i{animation:none}}
+
+/* Jacket: remove the visible milky-white outline; keep only a soft floating shadow */
+.home-main .hero img{border:0!important;outline:0!important;background:transparent;box-shadow:0 16px 34px rgba(58,85,113,.21),0 3px 10px rgba(70,95,120,.12);filter:none;border-radius:2px}
