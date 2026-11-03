@@ -1,8 +1,1 @@
-const GIFTBOX_CONFIG = {
-  songId: "template",
-
-  images: {
-    top: "FC567E6B-12F2-4604-8848-9ED7DD1E54EF.jpeg",
-    service: "24BAC62E-3563-42A4-9EE5-F72598664198.jpeg"
-  }
-};
+const GIFTBOX_CONFIG = {songId:"aurora",supabaseUrl:"https://htaccqbjrxjwxfjbdpax.supabase.co",supabaseKey:"sb_publishable_Crem286g2NphGb2-4wJfkA_6PNrzGrL",images:{top:"https://starglow-sp.com/Aurora/image/jacket/product01.jpg",service:"https://starglow-sp.com/Aurora/image/jacket/product01.jpg"}};
