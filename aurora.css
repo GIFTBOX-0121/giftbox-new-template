@@ -11,3 +11,23 @@ body:has(.home-main){background:radial-gradient(ellipse 90% 25% at 10% 3%,rgba(1
 
 /* Album typography and pearl-aurora silver light */
 .home-main .hero h1.album-title{display:flex;flex-direction:column;align-items:center;gap:0;white-space:normal;padding:5px 18px 10px;line-height:1.07}.home-main .hero h1.album-title::before{display:none}.home-main .hero h1.album-title::after{right:-7px;top:13px;font-size:15px}.home-main .hero h1.album-title span{font-family:Georgia,"Times New Roman",serif;font-size:clamp(23px,6vw,31px);font-weight:400;letter-spacing:.14em;color:#8995a3;text-shadow:0 1px 0 #fff}.home-main .hero h1.album-title em{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:clamp(48px,13vw,69px);font-weight:400;letter-spacing:.015em;line-height:1.08;background:linear-gradient(115deg,#8798aa 5%,#b4c4ce 25%,#6e8b9b 45%,#b6a5c8 68%,#789caa 90%);background-clip:text;-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 2px 1px #ffffffa8)}body:has(.home-main){background:radial-gradient(ellipse 90% 28% at 18% 1%,#d6edf0a6,transparent 72%),radial-gradient(ellipse 65% 22% at 92% 8%,#e8d8f2a6,transparent 75%),radial-gradient(ellipse 100% 28% at 86% 99%,#d3e8eeb3,transparent 74%),radial-gradient(ellipse 55% 23% at 8% 94%,#eee0f2a3,transparent 76%),#fafbfc}.home-main::before,.home-main::after{content:"";position:absolute;pointer-events:none;z-index:-1;left:-12%;width:124%;height:22%;border-radius:50%;background:linear-gradient(110deg,transparent,#d3e5e78c,#eee1f0a3,#c7d4e0a8,transparent);filter:blur(24px)}.home-main::before{top:-9%;transform:rotate(-8deg)}.home-main::after{bottom:-9%;transform:rotate(8deg)}.note-top time{font-size:13px;letter-spacing:.025em}.note-top time::before{font-size:13px}.gift-guidance{border:1px solid #d7e6e9;border-radius:12px;background:linear-gradient(115deg,#f0f8f8,#f9f6fc);padding:13px 15px;margin:12px 0 19px;box-shadow:0 5px 18px #b4c6d014}.gift-guidance p{margin:5px 0;font-size:14px;line-height:1.65;color:#405e6c;font-weight:500}.gift-guidance .warning{color:#805f6c;margin-top:11px}.gift-guidance small{display:block;margin-top:3px;font-size:12px;color:#6c8390}.note .smile .checkmark{border:0;width:auto;height:auto;font-size:17px}.note .smile.on .checkmark{background:none;color:inherit;border:0}.note .smile.on{min-width:106px}@media(max-width:420px){.gift-guidance p{font-size:13px}.note-top time{font-size:12px}}
+
+/* Pearl white / aurora ref: soft iridescent light, legible silver title */
+body:has(.home-main){
+ background:
+ radial-gradient(ellipse 90% 30% at 6% 5%,rgba(199,232,232,.78) 0%,transparent 79%),
+ radial-gradient(ellipse 80% 34% at 95% 10%,rgba(232,215,240,.69) 0%,transparent 78%),
+ radial-gradient(ellipse 85% 32% at 4% 95%,rgba(241,218,238,.60) 0%,transparent 78%),
+ radial-gradient(ellipse 95% 35% at 95% 94%,rgba(195,230,235,.74) 0%,transparent 79%),
+ linear-gradient(180deg,#f9fbfb 0%,#fff 48%,#fafbfd 100%);
+ background-attachment:fixed;
+}
+.home-main::before,.home-main::after{opacity:.45;filter:blur(36px)}
+.home-main .hero h1.album-title span{color:#7c8998;text-shadow:0 1px 0 rgba(255,255,255,.9)}
+.home-main .hero h1.album-title em{
+ background:linear-gradient(110deg,#536778 0%,#738698 26%,#536d80 47%,#857a98 68%,#526c7e 100%);
+ -webkit-background-clip:text;background-clip:text;
+ -webkit-text-fill-color:transparent;color:#526b7e;
+ text-shadow:none;filter:drop-shadow(0 1px 0 rgba(255,255,255,.55));
+}
+.home-main .nav a{background:rgba(255,255,255,.69);border-color:rgba(196,211,218,.84);box-shadow:0 5px 22px rgba(141,165,179,.07)}
